@@ -61,11 +61,8 @@ namespace IdleMaster.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to {\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil\fcharset2 Symbol;}}
-        ///{\colortbl ;\red79\green129\blue189;}
-        ///{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\sa200\sl276\slmult1\cf1\lang9\b\f0\fs32 Idle Master Release Notes\cf0\b0\fs22\par
-        ///\ul Version 0.8:\ulnone\par
-        ///\pard{\pntext\f1\&apos;B7\tab}{\*\pn\pnlvlblt\pnf1\pnindent0{\pntxtb\&apos;B7}}\fi-360\li720\sa200\sl276\slmult1 The application can now prioritize games with the highest card values.  This can be configu [rest of string was truncated]&quot;;.
+        ///   Looks up a localized string similar to {\rtf1\adeflang1025\ansi\ansicpg1252\uc1\adeff0\deff0\stshfdbch31505\stshfloch31506\stshfhich31506\stshfbi0\deflang1033\deflangfe1033\themelang1033\themelangfe0\themelangcs0{\fonttbl{\f0\fbidi \froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}{\f2\fbidi \fmodern\fcharset0\fprq1{\*\panose 02070309020205020404}Courier New;}
+        ///{\f3\fbidi \froman\fcharset2\fprq2{\*\panose 05050102010706020507}Symbol;}{\f10\fbidi \fnil\fcharset2\fprq2{\*\panose 05000000000000000000}Wingdings;}{\f10\fbidi \fn [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string Changelog {
             get {
@@ -219,6 +216,16 @@ namespace IdleMaster.Properties {
         internal static System.Drawing.Bitmap imgSpin {
             get {
                 object obj = ResourceManager.GetObject("imgSpin", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap imgStatistics {
+            get {
+                object obj = ResourceManager.GetObject("imgStatistics", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

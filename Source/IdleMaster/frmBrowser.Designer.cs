@@ -1,11 +1,14 @@
-﻿namespace IdleMaster
+﻿using System.ComponentModel;
+using System.Windows.Forms;
+
+namespace IdleMaster
 {
     partial class frmBrowser
     {
         /// <summary>
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        private IContainer components = null;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -31,7 +34,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBrowser));
             this.wbAuth = new System.Windows.Forms.WebBrowser();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblSaving = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tmrCheck = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -51,14 +54,14 @@
             this.wbAuth.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.wbAuth_DocumentCompleted);
             this.wbAuth.Navigating += new System.Windows.Forms.WebBrowserNavigatingEventHandler(this.wbAuth_Navigating);
             // 
-            // label1
+            // lblSaving
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(34, 11);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(180, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Idle Master is saving your information";
+            this.lblSaving.AutoSize = true;
+            this.lblSaving.Location = new System.Drawing.Point(34, 11);
+            this.lblSaving.Name = "lblSaving";
+            this.lblSaving.Size = new System.Drawing.Size(180, 13);
+            this.lblSaving.TabIndex = 1;
+            this.lblSaving.Text = "Idle Master is saving your information";
             // 
             // pictureBox1
             // 
@@ -81,7 +84,7 @@
             this.ClientSize = new System.Drawing.Size(976, 798);
             this.Controls.Add(this.wbAuth);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblSaving);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -96,9 +99,9 @@
 
         #endregion
 
-        private System.Windows.Forms.WebBrowser wbAuth;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Timer tmrCheck;
+        private WebBrowser wbAuth;
+        private Label lblSaving;
+        private PictureBox pictureBox1;
+        private Timer tmrCheck;
     }
 }

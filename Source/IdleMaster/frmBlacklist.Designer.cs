@@ -1,11 +1,14 @@
-﻿namespace IdleMaster
+﻿using System.ComponentModel;
+using System.Windows.Forms;
+
+namespace IdleMaster
 {
     partial class frmBlacklist
     {
         /// <summary>
         /// Required designer variable.
         /// </summary>
-        private System.ComponentModel.IContainer components = null;
+        private IContainer components = null;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -30,13 +33,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBlacklist));
             this.lstBlacklist = new System.Windows.Forms.ListBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.grpAdd = new System.Windows.Forms.GroupBox();
             this.btnAdd = new System.Windows.Forms.Button();
             this.txtAppid = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnRemove = new System.Windows.Forms.Button();
-            this.groupBox1.SuspendLayout();
+            this.grpAdd.SuspendLayout();
             this.SuspendLayout();
             // 
             // lstBlacklist
@@ -48,17 +51,17 @@
             this.lstBlacklist.Sorted = true;
             this.lstBlacklist.TabIndex = 0;
             // 
-            // groupBox1
+            // grpAdd
             // 
-            this.groupBox1.Controls.Add(this.btnAdd);
-            this.groupBox1.Controls.Add(this.txtAppid);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(13, 336);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(181, 76);
-            this.groupBox1.TabIndex = 1;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Add Game to Blacklist";
+            this.grpAdd.Controls.Add(this.btnAdd);
+            this.grpAdd.Controls.Add(this.txtAppid);
+            this.grpAdd.Controls.Add(this.label1);
+            this.grpAdd.Location = new System.Drawing.Point(13, 336);
+            this.grpAdd.Name = "grpAdd";
+            this.grpAdd.Size = new System.Drawing.Size(181, 76);
+            this.grpAdd.TabIndex = 1;
+            this.grpAdd.TabStop = false;
+            this.grpAdd.Text = "Add Game to Blacklist";
             // 
             // btnAdd
             // 
@@ -115,7 +118,7 @@
             this.ClientSize = new System.Drawing.Size(324, 418);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnRemove);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.grpAdd);
             this.Controls.Add(this.lstBlacklist);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -125,20 +128,20 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Manage Idle Master Blacklist";
             this.Load += new System.EventHandler(this.frmBlacklist_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.grpAdd.ResumeLayout(false);
+            this.grpAdd.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.ListBox lstBlacklist;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button btnRemove;
-        private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.TextBox txtAppid;
-        private System.Windows.Forms.Label label1;
+        private ListBox lstBlacklist;
+        private GroupBox grpAdd;
+        private Button btnRemove;
+        private Button btnSave;
+        private Button btnAdd;
+        private TextBox txtAppid;
+        private Label label1;
     }
 }
